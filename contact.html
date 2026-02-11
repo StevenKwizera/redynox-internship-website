@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Redynox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1559028006-848e6e7bf7e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=40&q=80" alt="Redynox Logo" class="logo-image">
+                    <h1>Redynox</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with our team</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>We'd love to hear from you! Whether you have a project in mind or just want to learn more about our services, feel free to reach out.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p>info@redynox.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Address</h3>
+                                <p>123 Tech Street<br>Digital City, DC 12345</p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Weekend: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                        
+                        <div id="formResponse" class="form-response" style="display: none;">
+                            <!-- Form response will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="submitted-data" id="submittedDataSection" style="display: none;">
+            <div class="container">
+                <h2>Submitted Data</h2>
+                <div id="submittedDataContent" class="submitted-data-content">
+                    <!-- Submitted data will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Redynox. All rights reserved.</p>
+            <p>Web Development Internship Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
